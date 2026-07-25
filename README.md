@@ -32,3 +32,5 @@ I spent years on the other side of those clauses. This is that judgment written 
 ## Where to start
 
 If you only click one thing, click [warmstart](https://github.com/thiagoamaro91/warmstart). It's small, it's live, and it's the first rung of everything else on this list. If you care more about whether any of it works than how it's built, click [caveat](https://github.com/thiagoamaro91/caveat) and read the scoreboard.
+
+If you'd rather have the context than the code, [thiago-amaro.com](https://thiago-amaro.com) is the longer version: how eleven years of running mainframes turned into building this, and why I think the bottleneck in enterprise AI is the translation rather than the models.
