@@ -12,12 +12,23 @@ Nothing here is a pitch. The git history is the evidence: you can watch each pie
 
 | Chapter | What it teaches | Status | Link |
 |---|---|---|---|
-| warmstart | Session memory in plain markdown files, no database, no embeddings | Live | [warmstart](https://github.com/thiagoamaro91/warmstart) <!-- LinkedIn post: warmstart launch --> |
-| Dispatch | Agents that write a proper briefing for other agents, so a task can be handed off without losing context | Live | [dispatch](https://github.com/thiagoamaro91/warmstart/tree/main/dispatch) <!-- link + LinkedIn post: dispatch --> |
-| Workflows | Work that fans out into parallel pieces and has a second pass check the first pass's output | Next up | [PR #4](https://github.com/thiagoamaro91/warmstart/pull/4) <!-- link + LinkedIn post: workflows --> |
+| warmstart | Session memory in plain markdown files, no database, no embeddings | Live | [warmstart](https://github.com/thiagoamaro91/warmstart) |
+| Dispatch | Agents that write a proper briefing for other agents, so a task can be handed off without losing context | Live | [dispatch](https://github.com/thiagoamaro91/warmstart/tree/main/dispatch) |
+| Workflows | Work that fans out into parallel pieces and has a second pass check the first pass's output | Live | [workflows](https://github.com/thiagoamaro91/warmstart/tree/main/workflows) |
+| skill-tuner | A loop that reads how the tools actually got used and rewrites them, auto-applying only the changes that cannot alter behaviour | Live | [skill-tuner](https://github.com/thiagoamaro91/warmstart/tree/main/skill-tuner) |
+| dreamer | An overnight pass that consolidates what the day produced, so memory gets smaller instead of larger | Live | [dreamer](https://github.com/thiagoamaro91/warmstart/tree/main/dreamer) |
+| /autonomous | One command that runs a task end to end, with research at the front and adversarial review at the back | Live | [autonomous](https://github.com/thiagoamaro91/warmstart/tree/main/autonomous) |
 
-The rest of the ladder (context tiering, skills, skill-tuner, /autonomous, loop altitudes) already runs in my private setup and lands here one chapter at a time. A chapter gets a row when it has something you can click; I'd rather say a thing isn't public yet than imply it is.
+Seven plugins ship from one marketplace as of [v0.3.0](https://github.com/thiagoamaro91/warmstart/releases). The rest of the ladder (context tiering, loop altitudes) still runs only in my private setup and lands here one chapter at a time. A chapter gets a row when it has something you can click; I'd rather say a thing isn't public yet than imply it is.
+
+## Measuring the thing, not just building it
+
+[caveat](https://github.com/thiagoamaro91/caveat) is the other half. It reads vendor Statements of Work from the buyer's side and flags clauses that quietly favour the vendor: pricing that looks fixed but is not, assumptions that let the vendor reopen commercial terms, change control only one side can trigger, missing exit terms.
+
+The agent is not the point. The eval harness around it is: 25 synthetic SOW excerpts with 1 to 3 planted defects each, plus 5 clean decoys, a scorer, and a scoreboard that reports what it got wrong as plainly as what it got right. Ground truth is free because the defects are planted at generation time.
+
+I spent years on the other side of those clauses. This is that judgment written down as a test set.
 
 ## Where to start
 
-If you only click one thing, click [warmstart](https://github.com/thiagoamaro91/warmstart). It's small, it's live, and it's the first rung of everything else on this list.
+If you only click one thing, click [warmstart](https://github.com/thiagoamaro91/warmstart). It's small, it's live, and it's the first rung of everything else on this list. If you care more about whether any of it works than how it's built, click [caveat](https://github.com/thiagoamaro91/caveat) and read the scoreboard.
